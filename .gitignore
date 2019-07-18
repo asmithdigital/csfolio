@@ -3,6 +3,6 @@
 .publish
 .idea
 /deploy
-/dist
+# /dist
 /node_modules
 npm-debug.log

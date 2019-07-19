@@ -1,4 +1,25 @@
 {% set header_title = 'Portfolio 1 Column Style 1' %}
+{% set custom_css = 'assets/css/custom-creative-agency.css' %}
+{% set page_dark = true %}
+{% set nav_full = 2 %}
+{% set nav_full_bg = '//cdn-html.nkdev.info/skylith/assets/images/demo-creative-agency-navbar-bg.png' %}
+{% set nav_items_effect = 1 %}
+{% set navigation = false %}
+{% set nav_mobile = false %}
+{% set header_size = 'full' %}
+{% set nav_sticky = true %}
+{% set nav_opaque = false %}
+{% set nav_transparent = true %}
+{% set nav_white_text_on_top = true %}
+{% set nav_in_container = false %}
+{% set navigation_full = {
+    'index.html': {
+        'name': 'Home'
+    },
+    'work.html': {
+        'name': 'Portfolio'
+    }
+} %}
 {% extends 'layouts/layout-1.html' %}
 
 {% block content %}
@@ -6,6 +27,17 @@
     <div class="nk-gap-3"></div>
 
     <div class="container">
+        
+        <div class="nk-gap-6"></div>
+        <div class="nk-gap mt-5"></div>
+
+        <h1 class="text-center">Let's make Creative</h1>
+        <div class="nk-subtitle-2 text-center mt-20">Design / Branding</div>
+        <div class="nk-gap mnt-7"></div>
+        <!-- START: Filter -->
+        {# <div class="nk-pagination nk-pagination-nobg nk-pagination-center pb-40">
+            <a href="#nk-toggle-filter"><span class="nk-icon-squares"></span></a>
+        </div> #}
         <ul class="nk-isotope-filter nk-isotope-filter-active pb-20">
             <li class="active" data-filter="*">All</li>
             <li data-filter="Web Design">Web Design</li>
@@ -13,7 +45,7 @@
             <li data-filter="Branding">Branding</li>
             <li data-filter="Print">Print</li>
         </ul>
-
+    
         <div class="nk-portfolio-list nk-isotope nk-isotope-wide nk-isotope-gap-lg">
             <div class="nk-isotope-item" data-filter="Branding">
                 <div class="nk-portfolio-item nk-portfolio-item-xxs nk-portfolio-item-info-style-1 hover">
